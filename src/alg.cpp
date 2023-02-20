@@ -5,9 +5,9 @@
 
 bool checkPrime(uint64_t value) {
     for (uint64_t i = 2; i <= sqrt(value); i++) {
-        if (value % i == 0){
-	    return false;
-	}
+        if (value % i == 0) {
+            return false;
+        }
     }
     return true;
 }
@@ -45,9 +45,7 @@ uint64_t sumPrime(uint64_t hbound) {
             sum += curNum;
             curNum++;
         }
-        else 
-            curNum++;
-	
+        else { curNum++; }
     }
     return sum;
 }
