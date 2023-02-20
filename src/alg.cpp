@@ -1,5 +1,5 @@
 // Copyright 2022 NNTU-CS
-#include <math.h>
+#include <Cmath>
 #include "alg.h"
 #include <cstdint>
 
