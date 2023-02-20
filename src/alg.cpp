@@ -1,7 +1,8 @@
-// Copyright 2022 NNTU-CS
-#include <cstdint>
-#include "alg.h"
 #include <math.h>
+#include "alg.h"
+#include <cstdint>
+
+
 
 bool checkPrime(uint64_t value) {
     for (uint64_t i = 2; i <= sqrt(value); i++) {
@@ -44,8 +45,9 @@ uint64_t sumPrime(uint64_t hbound) {
         if (checkPrime(curNum)) {
             sum += curNum;
             curNum++;
+        } else {
+            curNum++; 
         }
-        else { curNum++; }
     }
     return sum;
 }
