@@ -1,3 +1,4 @@
+// Copyright 2022 NNTU-CS
 #include <math.h>
 #include "alg.h"
 #include <cstdint>
@@ -46,7 +47,7 @@ uint64_t sumPrime(uint64_t hbound) {
             sum += curNum;
             curNum++;
         } else {
-            curNum++; 
+            curNum++;
         }
     }
     return sum;
